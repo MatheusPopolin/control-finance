@@ -1,0 +1,58 @@
+.color_brand_1{
+    color: var(--color-brand-1);
+}
+.color_brand_2{
+    color: var(--color-brand-2);
+}
+.color_brand_3{
+    color: var(--color-brand-3);
+}
+.color_grey_1{
+    color: var(--color-grey-1);
+}
+.color_grey_2{
+    color: var(--color-grey-2);
+}
+.color_grey_3{
+    color: var(--color-grey-3);
+}
+.color_grey_4{
+    color: var(--color-grey-4);
+}
+.color_grey_5{
+    color: var(--color-grey-5);
+}
+.color_mode{
+    color: var(--color-mode);
+}
+
+.bg_color_brand_1{
+    background-color: var(--color-brand-1);
+}
+.bg_color_brand_2{
+    background-color: var(--color-brand-2);
+}
+.bg_color_brand_3{
+    background-color: var(--color-brand-3);
+}
+.bg_color_grey_1{
+    background-color: var(--color-grey-1);
+}
+.bg_color_grey_2{
+    background-color: var(--color-grey-2);
+}
+.bg_color_grey_3{
+    background-color: var(--color-grey-3);
+}
+.bg_color_grey_4{
+    background-color: var(--color-grey-4);
+}
+.bg_color_grey_5{
+    background-color: var(--color-grey-5);
+}
+.bg_color_grey_opacity_1{
+    background-color: var(--color-grey-1-opacity-5);
+}
+.bg_color_mode{
+    background-color: var(--color-mode);
+}

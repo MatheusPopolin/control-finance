@@ -1,1 +1,51 @@
-/* Desenvolva a estilização da sua página aqui */
+header{
+    background-color: var(--color-grey-5);
+    color: var(--color-brand-1);    
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    padding: 1.75rem 1rem;
+    gap: 1.25rem;
+}
+
+header span{
+    color: var(--color-grey-1);
+}
+
+main{
+    background-color: var(--color-mode);
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+}
+
+.div_filters{
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+}
+
+.div_sum{
+    height: 2.75rem;
+    background-color: var(--color-grey-5);
+    border: 1.5px solid var(--color-grey-4);
+    border-radius: var(--radius-1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+main nav{
+    display: flex;
+    gap: 0.875rem;
+}
+
+main > ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}

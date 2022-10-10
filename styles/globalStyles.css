@@ -6,6 +6,16 @@
   box-sizing: border-box;
 }
 
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: var(--font-family-1);
+  color: var(--color-grey-1);
+  position: relative;
+}
+
 :root {
   --color-brand-1: #6741d9;
   --color-brand-2: #4c3299;
@@ -17,22 +27,27 @@
   --color-grey-4: #e9ecef;
   --color-grey-5: #f1f3f5;
   --color-grey-1-opacity-5: rgba(0, 0, 0, 0.5);
-  --fixed-white: #ffffff;
   --color-mode: #ffffff;
 
-  --font-size-1: 1.25rem;
-  --font-size-2: 1rem;
-  --font-size-3: 0.875rem;
-  --font-size-4: 0.75rem;
+  --font-size-1: 2rem;
+  --font-size-2: 1.25rem;
+  --font-size-3: 1rem;
+  --font-size-4: 0.875rem;
+  --font-size-5: 0.75rem;
+
 
   --font-weight-1: 600;
   --font-weight-2: 500;
   --font-weight-3: 400;
 
-  --font-line-height-1: 150%;
+  --line-height-1: 125%;
+  --line-height-2: 150%;
 
   --radius-1: 0.5rem;
   --radius-2: 0.25rem;
+
+  --margin-1: 0.625rem;
+  --margin-2: 1.75rem;
 
   --animation-duration: 0.2s;
   --animation-type: ease;
@@ -41,18 +56,26 @@
   --font-family-2: "Nunito", sans-serif;
 }
 
-body {
-  font-family: var(--font-family-1);
+.none{
+  display: none;
 }
 
-.container {
-  max-width: 43rem;
-  margin: 0 auto;
-}
 
-@media (max-width: 700px) {
+@media (min-width: 700px) {
   .container {
     max-width: 43rem;
-    margin: 0 1rem;
+    margin: 0 auto;
+  }
+
+  header .container{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .div_filters{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;    
   }
 }

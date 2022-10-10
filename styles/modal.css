@@ -1,0 +1,39 @@
+.modal_background{
+    background-color: var(--color-grey-1-opacity-5);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+}
+
+.modal_container{
+    background-color: var(--color-mode);
+    border-radius: var(--radius-1);
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    padding-top: 1.844rem;
+    position: relative;
+    gap: 1.563rem;
+}
+
+.modal_container div{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.modal_container > footer{
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+}
+
+.modal_container > footer > button{
+    width: 50%;
+}

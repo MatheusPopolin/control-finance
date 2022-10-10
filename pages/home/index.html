@@ -7,12 +7,45 @@
     <title>Control Finance</title>
     <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
     <meta name="description" content="Control Finance - Seu controle financeiro">
-    <link rel="stylesheet" href="/styles/globalStyles.css">
+    <link rel="stylesheet" href="/styles/buttons.css">    
+    <link rel="stylesheet" href="/styles/cards.css">
+    <link rel="stylesheet" href="/styles/colors.css">
+    <link rel="stylesheet" href="/styles/fonts.css">
+    <link rel="stylesheet" href="/styles/inputs.css">
+    <link rel="stylesheet" href="/styles/margins.css">
+    <link rel="stylesheet" href="/styles/modal.css">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="/styles/globalStyles.css">    
 </head>
 <body>
-    <main id="app"></main>
+    <header class="mg_bt_2">
+        <div class="container">
+            <h1 class="title_1_bold">Control <span class="title_1_bold">Finance</span></h1>
+            <button id="insertValue" class="button_primary text_1_bold">Registrar novo valor</button>
+        </div>
+    </header>    
+    <main id="app" class="container">
+        <div class="div_filters">
+            <h2 class="title_2_medium">Resumo financeiro</h2>
+            <nav>
+                <button id="filterButton" class="button_outline text_1_bold button_outline_selected">Todos</button>
+                <button id="filterButton" class="button_outline text_1_bold">Entradas</button>
+                <button id="filterButton" class="button_outline text_1_bold">Saídas</button>
+            </nav>
+        </div>
+        <div class="div_sum">
+            <h3 class="text_1_medium">Soma dos valores</h3>
+            <p class="text_1_medium" id="total">R$ 00,00</p>
+        </div>
+        <button id="insertValue" class="button_grey_big">
+            <h2 class="title_2_bold">Nenhum valor cadastrado</h2>
+            <p class="text_1_medium color_grey_2">Registrar novo valor</p>
+        </button>
+        <ul id="cardList">            
+        </ul>        
+    </main>    
     <script src="/scripts/modal.js"></script>
+    <script src="/scripts/render.js"></script>
     <script src="valuesData.js"></script>
     <script src="index.js"></script>
 </body>

@@ -1,0 +1,42 @@
+input[type=number]{
+    height: 2.75rem;
+    background: var(--color_mode);
+    color: var(--color-grey-2);
+    border: 1.5px solid var(--color-grey-3);
+    border-radius: var(--radius-1);
+    padding: 0 1rem;
+}
+input[type=number]::placeholder{
+    color: var(--color-grey-2);    
+}
+input[type=number]:hover{
+    border-color: var(--color-brand-1);   
+}
+input[type=number]:focus{
+    border: 1.5px solid var(--color-brand-1);   
+}
+
+.value_type1, .value_type2{
+    margin-top: 0.25rem;
+    height: 2rem;
+    background: var(--color_mode);
+    color: var(--color-grey-2);
+    border: 1.5px solid var(--color-grey-5);
+    border-radius: var(--radius-1);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.value_type1:hover, .value_type2:hover{
+    border-color: var(--color-brand-1);  
+    color: var(--color-brand-1);   
+}
+input[type=radio][id=type1]:checked ~ .value_type1{
+    border-color: var(--color-brand-1);  
+    color: var(--color-brand-1); 
+}
+input[type=radio][id=type2]:checked ~ .value_type2{
+    border-color: var(--color-brand-1);  
+    color: var(--color-brand-1); 
+}
