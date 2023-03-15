@@ -18,7 +18,7 @@ function createCard(insertedValue){
     trashButton.classList = "icon";
     trashButton.id = id;
     trashButton.insertAdjacentHTML("afterbegin", 
-        `<img id="${id}" src="../../assets/trash.png" alt="Excluir">`);
+        `<img id="${id}" src="../../assets/trash.png" alt="Excluir" >`);
     trashButton.addEventListener("click",(event)=>{
         filteredValues.forEach((value,index)=>{
             if(value.id==event.target.id){
